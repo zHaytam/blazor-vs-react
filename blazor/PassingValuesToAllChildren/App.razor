@@ -1,0 +1,13 @@
+<CascadingValue Value="_theme">
+    <CascadingValue Value="@((Action)(() => _theme = (_theme == "light" ? "dark" : "light")))">
+        <div>
+            <MyButton Text="Click me!"></MyButton>
+            <br />
+            <ThemeToggler></ThemeToggler>
+        </div>
+    </CascadingValue>
+</CascadingValue>
+
+@code {
+    private string _theme = "light";
+}

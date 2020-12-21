@@ -1,0 +1,9 @@
+﻿<button class="@Theme">@Text</button>
+
+@code {
+    [CascadingParameter]
+    public string Theme { get; set; }
+
+    [Parameter]
+    public string Text { get; set; }
+}
